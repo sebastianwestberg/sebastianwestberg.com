@@ -1,0 +1,13 @@
+blog_index:
+    path:       /{page}
+    defaults:   { _controller: BlogBundle:Blog:index, page: 1 }
+    requirements:
+        page:   \d+
+
+blog_show:
+    path:       /{year}/{month}/{slug}
+    defaults:   { _controller: BlogBundle:Blog:show }
+    requirements:
+        year:   \d+
+        month:  \d+
+        slug:   "[a-zA-Z0-9-_]+"
