@@ -29,6 +29,9 @@
 # Assets managed by Bower
 /web/assets/vendor/
 
+# node_modules folder (npm)
+/web/node_modules/
+
 # PHPUnit
 /app/phpunit.xml
 /phpunit.xml
