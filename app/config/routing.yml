@@ -1,6 +1,13 @@
+fos_user:
+    resource:   "@FOSUserBundle/Resources/config/routing/all.xml"
+
 index:
     path:       /
     defaults:   { _controller: AppBundle:Default:index }
+
+admin:
+    resource:   '@AdminBundle/Resources/config/routing.yml'
+    prefix:     /admin
 
 blog:
     resource:   '@BlogBundle/Resources/config/routing.yml'
